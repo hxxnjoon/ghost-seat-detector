@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build output
+frontend/dist/
+
+# Environment variables (Slack webhook URL, API URL 등)
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+#frontend
+.env
+frontend/.env
+
+# YOLO local dev/export tooling
+tools/.venv-export/
+*.pt
+tools/sample_images/*.jpg
+tools/sample_images/*.jpeg
+tools/sample_images/*.png
+!tools/sample_images/.gitkeep
+tools/sample_images_annotated/

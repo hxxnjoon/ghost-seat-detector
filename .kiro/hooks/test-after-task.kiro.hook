@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "태스크 완료 후 테스트",
+  "description": "스펙 태스크가 완료되면 백엔드와 프론트엔드 테스트를 실행합니다",
+  "version": "1",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "태스크가 완료되었습니다. 변경된 코드와 관련된 테스트를 실행하고, 실패하는 테스트가 있으면 수정하세요. 백엔드는 `cd backend && python -m pytest tests/ -v`, 프론트엔드는 `cd frontend && npx vitest --run`으로 실행합니다."
+  }
+}

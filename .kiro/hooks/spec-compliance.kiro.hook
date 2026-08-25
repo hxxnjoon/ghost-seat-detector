@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "스펙 준수 확인",
+  "description": "코드 파일 작성 시 스펙 문서(requirements.md, design.md)와의 일관성을 확인합니다",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "write"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "작성하려는 코드가 .kiro/specs/ghost-seat-detector/의 requirements.md와 design.md에 정의된 스펙과 일치하는지 확인하세요. 특히 좌석 상태 전이 로직, API 응답 형식, DynamoDB 스키마, 에러 처리 방식이 설계와 맞는지 검증하세요."
+  }
+}

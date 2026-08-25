@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "name": "Python 린트",
+  "description": "Python 파일이 수정되면 ruff로 린트를 실행합니다",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.py"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python -m ruff check --fix ."
+  },
+  "workspaceFolderName": "kiro_library",
+  "shortName": "lint-python"
+}

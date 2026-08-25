@@ -1,0 +1,7 @@
+# 로컬 개발/모델 export 전용 — Lambda 런타임에는 배포하지 않음 (Lambda는 onnxruntime만 사용).
+onnxruntime
+numpy
+Pillow
+ultralytics
+onnx
+onnxsim
